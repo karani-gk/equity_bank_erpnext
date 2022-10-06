@@ -1,4 +1,5 @@
 import frappe
+import requests
 
 
 
@@ -23,10 +24,8 @@ def validate_transaction(account, username, password):
     return bill_information
     
 
-
-@frappe.whitelist(allow_guest=True)
+@frappe.whitelist(allow_guest=True, methods='POST')
 def register_payment_notification(**kwargs):
-    
     
     if kwargs['billNumber'] == "HAV1234":
         response = {
