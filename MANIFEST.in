@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include equity_bank *.css
+recursive-include equity_bank *.csv
+recursive-include equity_bank *.html
+recursive-include equity_bank *.ico
+recursive-include equity_bank *.js
+recursive-include equity_bank *.json
+recursive-include equity_bank *.md
+recursive-include equity_bank *.png
+recursive-include equity_bank *.py
+recursive-include equity_bank *.svg
+recursive-include equity_bank *.txt
+recursive-exclude equity_bank *.pyc
